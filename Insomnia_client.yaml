@@ -1,0 +1,105 @@
+_type: export
+__export_format: 4
+__export_date: 2019-10-01T19:55:36.478Z
+__export_source: insomnia.desktop.app:v6.6.2
+resources:
+  - _id: req_f5fa6b5e2cca4241bf60008d47cad358
+    authentication: {}
+    body: {}
+    created: 1569959527939
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1569959527939
+    method: GET
+    modified: 1569959539520
+    name: get birds
+    parameters: []
+    parentId: wrk_b7604e05158647eb8a2f91e940e844ea
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: http://localhost:8000/birds
+    _type: request
+  - _id: wrk_b7604e05158647eb8a2f91e940e844ea
+    created: 1569956922309
+    description: ""
+    modified: 1569956922309
+    name: Insomnia
+    parentId: null
+    _type: workspace
+  - _id: req_d99588c95ec040fe8b7cdd089da44a5e
+    authentication: {}
+    body: {}
+    created: 1569959204102
+    description: ""
+    headers:
+      - disabled: false
+        id: pair_caeb7a7e74e146eb9c5f1d9f44664c20
+        name: authorization
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InlhbWl0Y2FyIiwic2NvcGUiOiJmMDNlZGU3Yy1iMTIxLTQxMTItYmNjNy0xMzBhM2U4Nzk4OGMiLCJpYXQiOjE1Njk5NTkwNDcsImV4cCI6MTU3MDAwMjI0N30.LzZ_AWWV8Z8OgdH6ztaCexGeVx3ZYCr22XJRh_Ho8Zw
+    isPrivate: false
+    metaSortKey: -1569959204102
+    method: GET
+    modified: 1569959423136
+    name: hapi request with token
+    parameters: []
+    parentId: wrk_b7604e05158647eb8a2f91e940e844ea
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: http://localhost:8000/restricted
+    _type: request
+  - _id: req_fb32ff73c12544b9af8a68e4c80ae382
+    authentication: {}
+    body:
+      mimeType: multipart/form-data
+      params:
+        - id: pair_65e7ac88671749629d4737eb6e0e29cb
+          name: username
+          value: yamitcar
+        - id: pair_1803727d5f494430a1cb88000372f722
+          name: password
+          value: mypassword
+    created: 1569956955523
+    description: ""
+    headers:
+      - id: pair_a019096394a24331a3579f323c0ad632
+        name: Content-Type
+        value: multipart/form-data
+    isPrivate: false
+    metaSortKey: -1569956955523
+    method: POST
+    modified: 1569957065884
+    name: hapi auth
+    parameters: []
+    parentId: wrk_b7604e05158647eb8a2f91e940e844ea
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: http://localhost:8000/auth
+    _type: request
+  - _id: env_97a7e987cb1512766d7cd8b5543f531ad5d4a5d1
+    color: null
+    created: 1569956922348
+    data: {}
+    dataPropertyOrder: null
+    isPrivate: false
+    metaSortKey: 1569956922348
+    modified: 1569956922348
+    name: Base Environment
+    parentId: wrk_b7604e05158647eb8a2f91e940e844ea
+    _type: environment
+  - _id: jar_97a7e987cb1512766d7cd8b5543f531ad5d4a5d1
+    cookies: []
+    created: 1569956922351
+    modified: 1569956922351
+    name: Default Jar
+    parentId: wrk_b7604e05158647eb8a2f91e940e844ea
+    _type: cookie_jar
